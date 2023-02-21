@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  app:
+    build: ./
+    volumes:
+      - ./:/rest-api
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
